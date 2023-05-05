@@ -18,7 +18,7 @@ def generate_password(adjectives: list, nouns: list, num_special_chars: int) -> 
     return password
 
 
-def main():
+def pass_picker():
     print("✵✵✵ Welcome to Password Picker ✵✵✵")
 
     with open('adjectives.txt', 'r') as adj:   # Loading adjectives and nouns from a file or an API
@@ -47,4 +47,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    pass_picker()
