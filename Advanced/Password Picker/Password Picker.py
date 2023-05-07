@@ -1,19 +1,20 @@
 
 # A password picker is an app that generates strong passwords using words, numbers and symbols.
 
-import random
+import secrets
 import string
+import time
 
 
 def generate_password(adjectives: list, nouns: list, num_special_chars: int) -> str:
-    adjective = random.choice(adjectives)
-    noun = random.choice(nouns)
-    number = str(random.randrange(0, 1_000_000))
-    special_chars = ''.join([random.choice(string.punctuation) for _ in range(num_special_chars)])
-    
+    adjective = secrets.choice(adjectives)
+    noun = secrets.choice(nouns)
+    number = str(secrets.randbelow(1_000_000))
+    special_chars = ''.join([secrets.choice(string.punctuation) for _ in range(num_special_chars)])
+
     password_elements = [adjective, noun, number, special_chars]
-    random.shuffle(password_elements)
-    
+    secrets.SystemRandom().shuffle(password_elements)
+
     password = ''.join(password_elements)
     return password
 
@@ -21,15 +22,16 @@ def generate_password(adjectives: list, nouns: list, num_special_chars: int) -> 
 def pass_picker():
     print("✵✵✵ Welcome to Password Picker ✵✵✵")
 
-    with open('adjectives.txt', 'r') as adj:   # Loading adjectives and nouns from a file or an API
+    with open('adjectives.txt', 'r') as adj:  # Loading adjectives and nouns from a file or an API
         adjectives = adj.read().splitlines()
 
     with open('nouns.txt', 'r') as noun:
         nouns = noun.read().splitlines()
 
-    password = generate_password(adjectives, nouns, 5)   #with num here indicate how many special chars to add
-    print(f"Your Password is: \u001b[38;5;57m{password}\u001b[0m")
-    
+    password = generate_password(adjectives, nouns, 5)  # with num here indicate how many special chars to add
+    time.sleep(1)
+    print(f"\nYour Password is: \u001b[38;5;57m{password}\u001b[0m")
+
     while True:
         try:
             response = input("\nWould you like another password? (y/n): ")
@@ -40,10 +42,12 @@ def pass_picker():
             continue
         if response.upper() == 'N':
             break
-        
+
         password = generate_password(adjectives, nouns, 5)
+        time.sleep(1)
         print(f"\nYour Password is: \u001b[38;5;57m{password}\u001b[0m")
 
+    print("\nThank you for using Password Picker. Goodbye!")
 
 
 if __name__ == '__main__':
