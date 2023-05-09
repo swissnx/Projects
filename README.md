@@ -24,7 +24,7 @@
     <img alt="" src="https://img.shields.io/badge/Python-Engineer-lightgrey" />
    </a>
    <a href="">
-    <img alt="" src="https://img.shields.io/badge/-Developer-yellow" />
+    <img alt="" src="https://img.shields.io/badge/Programming-Developer-yellow" />
    </a>
    <a href="">
     <img alt="" src="https://img.shields.io/badge/Programming-Engineer-yellowgreen" />
