@@ -65,17 +65,17 @@ Thank you
 
 
 ## Table of Contents
-- Beginner                 ------------ **I HAVE TO CHANGE THE NAMES, AND MAKE IT SOUND MORE PROFESSIONAL, LIKE,**
+- Beginner
   - one
   - two
     - one
     - two
-- Advanced                 ------------ **MAYBE, I CAN ADD "GAMES" SECTION, "CALCULATORS" SECTION AND SO ON.**
+- Advanced
   - one
   - two
     - one
     - two
-- Professional             ------------ **GOTTA BE CREATIVE**
+- Professional
   - one
   - two
     - one
