@@ -1,8 +1,8 @@
 # Projects - My Programming Portfolio
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)]
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]
+![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 <br>
 
 
@@ -47,10 +47,8 @@
 </p>
 
 
-#### Welcome to my Portfolio, which is divided into several parts:
- - Beginner                 ------------ **I HAVE TO CHANGE THE NAMES, AND MAKE IT SOUND MORE PROFESSIONAL, LIKE,**
- - Advanced                 ------------ **MAYBE, I CAN ADD "GAMES" SECTION, "CALCULATORS" SECTION AND SO ON.**
- - Professional             ------------ **GOTTA BE CREATIVE**
+#### Welcome to my Portfolio
+
 
 I am happy to present my work as well as share it with anyone who would like to use it, please see [license](https://github.com/swissnx/Projects/blob/main/LICENSE).
 Thank you
@@ -66,30 +64,35 @@ Thank you
 <br>
 
 
+## Table of Contents
+- Beginner                 ------------ **I HAVE TO CHANGE THE NAMES, AND MAKE IT SOUND MORE PROFESSIONAL, LIKE,**
+  - one
+  - two
+    - one
+    - two
+- Advanced                 ------------ **MAYBE, I CAN ADD "GAMES" SECTION, "CALCULATORS" SECTION AND SO ON.**
+  - one
+  - two
+    - one
+    - two
+- Professional             ------------ **GOTTA BE CREATIVE**
+  - one
+  - two
+    - one
+    - two
 
 
+- Calculators
+  - one
+  - two
+  
+- Games
+  - one
+  - two
 
-## (table of contents) ??
-
-## About Me
-[Insert a brief introduction about yourself, your background, and your interests]
-
-## Skills
-[Insert a list of your skills and technologies you are proficient in]
-
-## Projects
-[Insert a list of your projects with a brief description and links to the project repositories]
-
-## Contact
-[Insert your contact information]
-
-
-
-
-
-
-
-
+- Encryptions
+  - one
+  - two
 
 
 <br>
