@@ -9,25 +9,25 @@
 
 <p align="left">
   <a href="https://github.com/swissnx/Projects/releases/">
+    <img alt="" src="https://img.shields.io/badge/-Python-maroon" />
+   </a>
+   <a href="">
+    <img alt="" src="https://img.shields.io/badge/-Programming-brown" />
+   </a>
+   <a href="">
+    <img alt="" src="https://img.shields.io/badge/-GitHub-black" />
+   </a>
+   <a href="">
     <img alt="" src="https://img.shields.io/badge/Python-Projects-blue" />
    </a>
    <a href="">
     <img alt="" src="https://img.shields.io/badge/Python-Engineer-lightgrey" />
    </a>
    <a href="">
-    <img alt="" src="https://img.shields.io/badge/-GitHub-black" />
+    <img alt="" src="https://img.shields.io/badge/-Developer-yellow" />
    </a>
    <a href="">
-    <img alt="" src="https://img.shields.io/badge/-Programming-brown" />
-   </a>
-   <a href="">
-    <img alt="" src="" />
-   </a>
-   <a href="">
-    <img alt="" src="" />
-   </a>
-   <a href="">
-    <img alt="" src="" />
+    <img alt="" src="https://img.shields.io/badge/Programming-Engineer-yellowgreen" />
    </a>
    <a href="">
     <img alt="" src="" />
