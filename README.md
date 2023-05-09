@@ -1,4 +1,4 @@
-# Projects - My Programming Portfolio
+# 💎 Projects - My Programming Portfolio
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 ![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)
