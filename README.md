@@ -14,7 +14,6 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-black)](https://github.com/swissnx)
 [![github](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/swissnx)
 ![git](https://badgen.net/badge/icon/Git?icon=git&label)
-![windows](https://badgen.net/badge/icon/windows?icon=windows&label)
 ![awesome](https://badgen.net/badge/icon/awesome?icon=awesome&label)
 
 [![Python Projects](https://img.shields.io/badge/Python-Projects-blue)](https://github.com/swissnx/Projects)
