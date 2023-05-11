@@ -5,14 +5,14 @@
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 <br>
 
-![Python](https://img.shields.io/badge/-Python-maroon)
+[![Python](https://img.shields.io/badge/-Python-maroon)](https://www.python.org/)
 ![Programming](https://img.shields.io/badge/-Programming-brown)
 [![email.de-blue](https://img.shields.io/badge/-shohruh.nx%40outlook.de-darkblue)](mailto:shohruh.nx@outlook.de)
 ![elite](https://img.shields.io/badge/-1337-black)
-![telegram](https://badgen.net/badge/icon/telegram?icon=telegram&label)
+[![telegram](https://badgen.net/badge/icon/telegram?icon=telegram&label)](https://t.me/shohruh_m)
 ![terminal](https://badgen.net/badge/icon/terminal?icon=terminal&label)
-![GitHub](https://img.shields.io/badge/-GitHub-black)
-![github](https://badgen.net/badge/icon/GitHub?icon=github&label)
+[![GitHub](https://img.shields.io/badge/-GitHub-black)](https://github.com/swissnx)
+[![github](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/swissnx)
 ![git](https://badgen.net/badge/icon/Git?icon=git&label)
 ![windows](https://badgen.net/badge/icon/windows?icon=windows&label)
 ![awesome](https://badgen.net/badge/icon/awesome?icon=awesome&label)
