@@ -70,7 +70,7 @@ Thank you
 <br>
 <br>
 
-I update this repository almost daily, mostly whenever the code is fully ready, or solution is also ready for a problem. Updating/Modifications also depend on my spare time allocated to using Github. Thanks :D
+*I update this repository almost daily, mostly whenever the code is fully ready, or solution is also ready for a problem. Updating/Modifications also depend on my spare time allocated to using Github. Thanks :D*
 <br><br>
 
 ![PythonLogo](https://user-images.githubusercontent.com/68494604/94645884-950ac780-030a-11eb-9c8f-40d9740fc6ad.gif)
