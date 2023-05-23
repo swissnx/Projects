@@ -58,7 +58,7 @@ I am happy to present my work as well as share it with anyone who would like to 
 
 <br><br>
 
-*I update this repository almost daily, mostly whenever the code is fully ready, or solution is also ready for a problem. Updating/modifications also depend on my spare time allocated to using Github. Thank you for visiting my portfolio!😊 :D*
+*I update this repository almost daily, mostly whenever the code is complete, or solution is also ready for a problem. Updates/modifications also depend on my spare time allocated to using Github. Thank you for visiting my portfolio! :D*
 <br><br><br>
 
 
