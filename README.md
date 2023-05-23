@@ -62,8 +62,8 @@ I am happy to present my work as well as share it with anyone who would like to 
 <br><br><br>
 
 
-![Contact Me Here](https://img.shields.io/badge/Details_Below-Contact_Me_here-FF9800?style=for-the-badge&logo=dialogflow&logoColor=black)
-![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+[![Contact Me Here](https://img.shields.io/badge/Details_Below-Contact_Me_here-FF9800?style=for-the-badge&logo=dialogflow&logoColor=black)](https://github.com/swissnx/Projects/tree/main)
+[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 
 [![Email](https://img.shields.io/badge/Contact_Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:shohruh.nx@outlook.de)
 [![Github](https://img.shields.io/badge/GitHub_Portfolio-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/swissnx)
