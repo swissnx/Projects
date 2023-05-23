@@ -71,7 +71,7 @@ I am happy to present my work as well as share it with anyone who would like to 
 [![Social-Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shohruh-m/)
 [![Social-WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/+971504049557)
 [![Social-Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/shohruh_m)
-![Discord](https://img.shields.io/badge/Discord-Nyx%235752-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+[![Discord](https://img.shields.io/badge/Discord-Nyx%235752-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/login)
 <br><br><br>
 
 ![PythonLogo](https://user-images.githubusercontent.com/68494604/94645884-950ac780-030a-11eb-9c8f-40d9740fc6ad.gif)
