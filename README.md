@@ -6,15 +6,6 @@
 ![pycharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
 ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 [![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
-<br>
-
-[![Python](https://img.shields.io/badge/-Python-maroon)](https://www.python.org/)
-![Programming](https://img.shields.io/badge/-Programming-red)
-![elite](https://img.shields.io/badge/-1337-black)
-[![Python Projects](https://img.shields.io/badge/Python-Projects-blue)](https://github.com/swissnx/Projects)
-[![Programming Developer](https://img.shields.io/badge/Programming-Developer-yellow)](https://github.com/swissnx)
-[![Programming Engineer](https://img.shields.io/badge/Programming-Engineer-yellowgreen)](https://github.com/swissnx)
-[![pypi](https://badgen.net/badge/icon/PyPi?icon=pypi&label)](https://pypi.org/)
 <br><br>
 
 I'm a passionate programmer, aspiring to acquire my programming certificate soon, which will enable me to become the fully licensed software engineer/developer. Currently learning Python, after receiving my certificate will move on to Javascript and HTML. In this portfolio, you will find some of the projects that I have done and contributed to. They showcase my skills and interests in various domains and technologies. You can click on each project to see more details, such as the code, and the brief documentation.
