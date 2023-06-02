@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/made_with-python-a60505?style=for-the-badge&logo=python&logoColor=white&labelColor=ed0707)](https://www.python.org/)
 ![Devs](https://img.shields.io/badge/Built%20by-Developers_%3C/%3E-077aab?style=for-the-badge&logoColor=white&labelColor=05b2fc)
 ![...](https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white)
-![](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
 ![pycharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
 ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 [![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
