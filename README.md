@@ -1,8 +1,12 @@
 # Projects - My Programming Portfolio!👋
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+[![Python](https://img.shields.io/badge/made_with-python-a60505?style=for-the-badge&logo=python&logoColor=white&labelColor=ed0707)](https://www.python.org/)
+![Devs](https://img.shields.io/badge/Built%20by-Developers_%3C/%3E-077aab?style=for-the-badge&logoColor=white&labelColor=05b2fc)
+![...](https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white)
+![](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
+![pycharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
+![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 <br>
 
 [![Python](https://img.shields.io/badge/-Python-maroon)](https://www.python.org/)
@@ -63,11 +67,10 @@ Thank you for visiting my portfolio!😊 :D*
 <br><br><br>
 
 
-[![Contact Me Here](https://img.shields.io/badge/Details_Below-Contact_Me_here-FF9800?style=for-the-badge&logo=dialogflow&logoColor=black)](https://github.com/swissnx/Projects/tree/main)
-[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
+[![Contact Me Here](https://img.shields.io/badge/Contact_Me_here-Details_Below-f7cc0a?style=for-the-badge&logo=dialogflow&logoColor=00ff49&labelColor=0b8f31)](https://github.com/swissnx/Projects/tree/main)
 
 [![Email](https://img.shields.io/badge/Contact_Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:shohruh.nx@outlook.de)
-[![Github](https://img.shields.io/badge/GitHub_Portfolio-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/swissnx)
+[![Github](https://img.shields.io/badge/GitHub_Page-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/swissnx)
 
 [![Social-Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shohruh-m/)
 [![Social-WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/+971504049557)
