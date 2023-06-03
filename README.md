@@ -52,9 +52,9 @@ I am happy to present my work as well as share it with anyone who would like to 
 
 <br><br>
 
-*I update this repository almost daily, most of the time whenever the code is complete, or solution is also ready for a problem. Updates/modifications also depend on my spare time allocated to using Github.
+*I update this repository almost daily, most of the time whenever the code is complete, or solution is also ready for a problem. Updates/modifications also depend on my spare time allocated to using Github.<br>
 Thank you for visiting my portfolio!😊 :D*
-<br><br><br>
+<br><br>
 
 
 [![Contact Me Here](https://img.shields.io/badge/Contact_Me_here-Details_Below-f7cc0a?style=for-the-badge&logo=dialogflow&logoColor=00ff49&labelColor=0b8f31)](https://github.com/swissnx/Projects/tree/main)
