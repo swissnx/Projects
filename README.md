@@ -68,6 +68,6 @@ Thank you for visiting my portfolio!😊 :D*
 [![Discord](https://img.shields.io/badge/Discord-Nyx%235752-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/login)
 <br><br><br>
 
-![PythonLogo](https://user-images.githubusercontent.com/68494604/94645884-950ac780-030a-11eb-9c8f-40d9740fc6ad.gif)
+![PythonLogo](https://github.com/swissnx/Projects/blob/main/icons/python%20gif.gif)
 <br>
 <br>
