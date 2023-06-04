@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 <br><br>
 
-I'm a passionate programmer, aspiring to acquire my programming certificate soon, which will enable me to become the fully licensed software engineer/developer. Currently learning Python, after receiving my certificate will move on to Javascript and HTML. In this portfolio, you will find some of the projects that I have done and contributed to. They showcase my skills and interests in various domains and technologies. You can click on each project to see more details, such as the code, and the brief documentation.
+I'm a passionate programmer, aspiring to acquire my programming certificate soon, which will enable me to become the fully licensed software engineer/developer. Currently learning Python, after receiving my certificate will move on to Javascript and HTML. In this portfolio, you will find the projects that I have completed, which showcases my skills and interests in various aspects of the programming world. You can click on each project to see more details, such as the code, and the brief documentation.
 <br>
 
 I am happy to present my work as well as share it with anyone who would like to use it, please see [License](https://github.com/swissnx/Projects/blob/main/LICENSE).
