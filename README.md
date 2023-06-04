@@ -16,40 +16,29 @@ I am happy to present my work as well as share it with anyone who would like to 
 
 
 ## Table of Contents 💎
-- Problem Solutions
-  - [one]()
-  - [two]()
+- [AceCrypt](https://github.com/swissnx/Projects/tree/main/AceCrypt)
+  - [Bitwise Operations](https://github.com/swissnx/Projects/tree/main/AceCrypt/Bitwise%20Operations)
+  - [Caesar's Cipher](https://github.com/swissnx/Projects/tree/main/AceCrypt/Caesar's%20Cipher)
+  - [Hash Tools](https://github.com/swissnx/Projects/tree/main/AceCrypt/Hash%20Tools)
+  - [Miscellaneous](https://github.com/swissnx/Projects/tree/main/AceCrypt/Miscellaneous)
+  - [Morse Code](https://github.com/swissnx/Projects/tree/main/AceCrypt/Morse%20Code)
+  - [Password Generator](https://github.com/swissnx/Projects/tree/main/AceCrypt/Password%20Generator)
+  - [Password Picker](https://github.com/swissnx/Projects/tree/main/AceCrypt/Password%20Picker)
 
-- dir_name
-  - one
-  - two
-    - [one]()
-    - [two]()
+- [Practical Env](https://github.com/swissnx/Projects/tree/main/Practical%20Env)
+  - [Problem_Solutions](https://github.com/swissnx/Projects/tree/main/Practical%20Env/Problem_Solutions)
+  - [CodeChef](https://github.com/swissnx/Projects/tree/main/Practical%20Env/CodeChef)
 
-- dir_name
-  - one
-  - two
-    - [one]()
-    - [two]()
+- [Math](https://github.com/swissnx/Projects/tree/main/Math)
 
-- dir_name
-  - one
-  - two
-    - [one]()
-    - [two]()
+- [Others](https://github.com/swissnx/Projects/tree/main/Others)
 
-- Calculators
-  - [one]()
-  - [two]()
+- [Utilities](https://github.com/swissnx/Projects/tree/main/Utilities)
+  - [Calculators](https://github.com/swissnx/Projects/tree/main/Utilities/Calculators)
+  - [Converters](https://github.com/swissnx/Projects/tree/main/Utilities/Converters)
+  - [Generators](https://github.com/swissnx/Projects/tree/main/Utilities/Generators)
   
-- Games
-  - [one]()
-  - [two]()
-
-- Encryptions
-  - [one]()
-  - [two]()
-
+- [Games](https://github.com/swissnx/Projects/tree/main/Games)
 <br><br>
 
 *I update this repository almost daily, most of the time whenever the code is complete, or solution is also ready for a problem. Updates/modifications also depend on my spare time allocated to using Github.<br>
