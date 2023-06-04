@@ -1,8 +1,8 @@
 
 class WordFinder:
     def __init__(self):
-        self.__word = input("Enter the word you wish to find: ").upper()
-        self.__string = input("Enter the string you wish to search through: ").upper()
+        self.__word = input("Word to find: ").upper()
+        self.__string = input("String to search through: ").upper()
         self.__found = True
         self.__start = 0
 
