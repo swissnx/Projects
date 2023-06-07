@@ -21,11 +21,11 @@ class ZodiacSigns:
             return self.__zodiac_signs[4]
         elif (month == 8 and day >= 23) or (month == 9 and day <= 22):
             return self.__zodiac_signs[5]
-        elif (month == 9 and day >= 23) or (month ==10 and day <=22):
+        elif (month == 9 and day >= 23) or (month == 10 and day <= 22):
             return self.__zodiac_signs[6]
-        elif (month ==10 and day >=23) or (month ==11 and day <=21):
+        elif (month == 10 and day >= 23) or (month == 11 and day <= 21):
             return self.__zodiac_signs[7]
-        elif (month ==11 and day >=22) or (month ==12 and day <=21):
+        elif (month == 11 and day >= 22) or (month == 12 and day <= 21):
             return self.__zodiac_signs[8]
         else:
             return self.__zodiac_signs[9]
