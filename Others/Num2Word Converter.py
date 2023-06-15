@@ -43,7 +43,3 @@ class NumberConverter:
 if __name__ == "__main__":
     numconv = NumberConverter()
     numconv.run()
-
-
-
-# write a code, input numbers from 1 to 100, output should be in words. For example, if input is 1 output should be one, and up to 100
