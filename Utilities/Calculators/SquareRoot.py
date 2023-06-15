@@ -35,18 +35,3 @@ class SquareRoot:
 if __name__ == "__main__":
     calculator = SquareRoot()
     calculator.run()
-
-
-
-# ✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶ DOCUMENTATION ✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶✶ #
-#import math
-def squareroot():
-    while True:
-        num = input("√sq number: ")
-        if not num:
-            break
-        num = float(num)
-        sqroot = math.sqrt(num)
-        print(f"= {sqroot:.2f}\n")
-
-squareroot()
