@@ -107,10 +107,6 @@ class GoldPriceCalculator:
         return self.__run()
 
 
-calculator = GoldPriceCalculator()
-calculator.run()
-
-
-# REFERENCE: [http://goldpricez.com/calculator/jewellery]
-# [https://www.google.com/search?q=gold+price+tracker+source+code+youtube&rlz=1C1CHBD_en-GBAE1039AE1039&ei=gDFLZIGzN_jm7_UP0pqV8A8&ved=0ahUKEwiB8_Tgxcv-AhV487sIHVJNBf4Q4dUDCA8&uact=5&oq=gold+price+tracker+source+code+youtube&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEOggIIRCgARDDBDoKCCEQoAEQwwQQCkoECEEYAFAAWNkXYNEZaABwAXgAgAG6AYgB1QiSAQMwLjaYAQCgAQHAAQE&sclient=gws-wiz-serp]
-# [https://keisan.casio.com/exec/system/1227605622]
+if __name__ == "__main__":
+    calculator = GoldPriceCalculator()
+    calculator.run()
