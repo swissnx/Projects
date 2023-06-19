@@ -37,7 +37,7 @@ class PasswordTools:
             return password
 
         except Exception as e:
-            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
     @staticmethod
     def generate_password(length: int, characters: str) -> str:
@@ -59,7 +59,7 @@ class PasswordTools:
             elif score == 4:
                 return "Very Strong"
         except Exception as e:
-            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
     @staticmethod
     def __save_to_xslx(passlen: int, password: str, hashed_password: str, encrypted_password: bytes, crypto_key: bytes):
@@ -93,7 +93,7 @@ class PasswordTools:
                 length = max(len(str(cell.value)) for cell in column_cells)
                 ws.column_dimensions[column_cells[0].column_letter].width = length
         except Exception as e:
-            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
     @staticmethod
     def save_to_xslx(passlen: int, password: str, hashed_password: str, encrypted_password: bytes, crypto_key: bytes):
@@ -105,7 +105,7 @@ class PasswordTools:
             with open('passwords.txt', 'a') as txtfile:
                 txtfile.write(f'{password}\n')
         except Exception as e:
-            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
     @staticmethod
     def save_to_txt(password: str):
@@ -116,7 +116,7 @@ class PasswordTools:
         try:
             return passlib.hash.pbkdf2_sha256.using(salt_size=32, rounds=2**20).hash(password)
         except Exception as e:
-            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
     
     @staticmethod
     def hash_password(password: str) -> str:
@@ -129,7 +129,7 @@ class PasswordTools:
         except ValueError:
             return False
         except Exception as e:
-            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
     @staticmethod
     def verify_hash(password: str, hashed_password: str) -> bool:
@@ -144,7 +144,7 @@ class PasswordTools:
                 key_file.write(self.__key + b"\n")
             return encrypted_password
         except Exception as e:
-            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
     def encrypt_password(self, password: str) -> bytes:
         return self.__encrypt_password(password)
@@ -230,7 +230,7 @@ class PasswordTools:
                             if response.upper() not in ['Y', 'N', ""]:
                                 raise ValueError("\nInvalid response. Please enter Y or N.")
                         except ValueError as e:
-                            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
                             continue
                         if response.upper() == 'N' or response == "":
                             return
@@ -244,7 +244,7 @@ class PasswordTools:
                         PasswordTools.save_to_xslx(len(passwort), passwort, hashed_password, None, None)
                         print(f"\nHashed Value: \033[38;5;4m{hashed_password}\033[0m")
                     except Exception as e:
-                        print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                        print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
                     while True:
                         try:
@@ -252,7 +252,7 @@ class PasswordTools:
                             if response.upper() not in ['Y', 'N', ""]:
                                 raise ValueError("\nInvalid response. Please enter Y or N.")
                         except ValueError as e:
-                            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
                             continue
                         if response.upper() == 'N' or response == "":
                             return
@@ -270,7 +270,7 @@ class PasswordTools:
                         else:
                             print("\n\033[38;5;202mVerification failed!\033[0m")
                     except Exception as e:
-                        print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                        print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
                     while True:
                         try:
@@ -278,7 +278,7 @@ class PasswordTools:
                             if response.upper() not in ['Y', 'N', ""]:
                                 raise ValueError("\nInvalid response. Please enter Y or N.")
                         except ValueError as e:
-                            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
                             continue
                         if response.upper() == 'N' or response == "":
                             return
@@ -292,7 +292,7 @@ class PasswordTools:
                         PasswordTools.save_to_xslx(len(enc_password), enc_password, None, encrypted_password, self.__key)
                         print(f"\nEncrypted Password: \033[38;5;6m{encrypted_password}\033[0m")
                     except Exception as e:
-                        print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                        print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
                     while True:
                         try:
@@ -300,7 +300,7 @@ class PasswordTools:
                             if response.upper() not in ['Y', 'N', ""]:
                                 raise ValueError("\nInvalid response. Please enter Y or N.")
                         except ValueError as e:
-                            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
                             continue
                         if response.upper() == 'N' or response == "":
                             return
@@ -320,7 +320,7 @@ class PasswordTools:
                         decrypted_password = PasswordTools.decrypt_password(dec_password)
                         print(f"\nDecrypted Password: \033[38;5;9m{decrypted_password}\033[0m")
                     except Exception as e:
-                        print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                        print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
                     while True:
                         try:
@@ -328,7 +328,7 @@ class PasswordTools:
                             if response.upper() not in ['Y', 'N', ""]:
                                 raise ValueError("\nInvalid response. Please enter Y or N.")
                         except ValueError as e:
-                            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
                             continue
                         if response.upper() == 'N' or response == "":
                             return
@@ -348,7 +348,7 @@ class PasswordTools:
                         crypto_key = PasswordTools.fetch_crypto_keys(retrieve_crypto_key)
                         print(f"\nCrypto Key: \033[38;5;250m{crypto_key}\033[0m")
                     except Exception as e:
-                        print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                        print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
                     while True:
                         try:
@@ -356,7 +356,7 @@ class PasswordTools:
                             if response.upper() not in ['Y', 'N', ""]:
                                 raise ValueError("\nInvalid response. Please enter Y or N.")
                         except ValueError as e:
-                            print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                            print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
                             continue
                         if response.upper() == 'N' or response == "":
                             return
@@ -364,10 +364,10 @@ class PasswordTools:
                             break
 
             except ValueError as ve:
-                print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{ve}\033[0m")
+                print(f"\n\033[3m!✶ Error: \033[38;5;200m{ve}\033[0m")
 
             except Exception as e:
-                print(f"\n\033[3m✶!✶ Error: \033[38;5;200m{e}\033[0m")
+                print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
 
     def run(self):
         self.__run()
