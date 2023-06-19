@@ -7,4 +7,4 @@ try:
     passtools.run()
 
 except Exception as e:
-    print(f"\n\u001b[3m!✶ Error: \u001b[38;5;200m{e}\u001b[0m")
+    print(f"\n\033[3m!✶ Error: \033[38;5;200m{e}\033[0m")
