@@ -22,8 +22,8 @@ I am happy to present my work as well as share it with anyone who would like to 
   - [Hash Tools](https://github.com/swissnx/Projects/tree/main/AceCrypt/Hash%20Tools)
   - [Miscellaneous](https://github.com/swissnx/Projects/tree/main/AceCrypt/Miscellaneous)
   - [Morse Code](https://github.com/swissnx/Projects/tree/main/AceCrypt/Morse%20Code)
-  - [Password Generator](https://github.com/swissnx/Projects/tree/main/AceCrypt/Password%20Generator)
   - [Password Picker](https://github.com/swissnx/Projects/tree/main/AceCrypt/Password%20Picker)
+  - [Password Tools](https://github.com/swissnx/Projects/tree/main/AceCrypt/Password%20Tools)
 
 - [Practical Env](https://github.com/swissnx/Projects/tree/main/Practical%20Env)
   - [Problem_Solutions](https://github.com/swissnx/Projects/tree/main/Practical%20Env/Problem_Solutions)
