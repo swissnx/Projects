@@ -196,7 +196,7 @@ class PasswordTools:
                     break
 
                 if action == "1":
-                    passlen = input("\bPasslen: ")
+                    passlen = input("\nPasslen: ")
                     if passlen == "":
                         break
                     if not passlen.isdigit():
