@@ -17,13 +17,19 @@ I am happy to present my work as well as share it with anyone who would like to 
 
 ## Table of Contents 💎
 - [AceCrypt](https://github.com/swissnx/Projects/tree/main/AceCrypt)
-  - [Bitwise Operations](https://github.com/swissnx/Projects/tree/main/AceCrypt/Bitwise%20Operations)
-  - [Caesar's Cipher](https://github.com/swissnx/Projects/tree/main/AceCrypt/Caesar's%20Cipher)
-  - [Hash Tools](https://github.com/swissnx/Projects/tree/main/AceCrypt/Hash%20Tools)
-  - [Miscellaneous](https://github.com/swissnx/Projects/tree/main/AceCrypt/Miscellaneous)
-  - [Morse Code](https://github.com/swissnx/Projects/tree/main/AceCrypt/Morse%20Code)
-  - [Password Picker](https://github.com/swissnx/Projects/tree/main/AceCrypt/Password%20Picker)
-  - [Password Tools](https://github.com/swissnx/Projects/tree/main/AceCrypt/Password%20Tools)
+  - [ASCII Tools]()
+  - [Bitwise Tools]()
+  - [Caesar's Cipher]()
+  - [Data Storing Options]()
+  - [Hash Tools]()
+  - [Miscellaneous]()
+  - [Morse Code]()
+  - [Password Picker]()
+  - [Password Tools]()
+  - [Steam]()
+  - [TextCrypt]()
+  - [Unicode Tools]()
+  - [WiFi Tools]()
 
 - [Practical Env](https://github.com/swissnx/Projects/tree/main/Practical%20Env)
   - [Problem_Solutions](https://github.com/swissnx/Projects/tree/main/Practical%20Env/Problem_Solutions)
@@ -31,16 +37,29 @@ I am happy to present my work as well as share it with anyone who would like to 
 
 - [Math](https://github.com/swissnx/Projects/tree/main/Math)
 
-- [Others](https://github.com/swissnx/Projects/tree/main/Others)
+- [Miscellaneous](https://github.com/swissnx/Projects/tree/main/Others)
 
 - [Utilities](https://github.com/swissnx/Projects/tree/main/Utilities)
-  - [Banking sys](https://github.com/swissnx/Projects/tree/main/Utilities/Banking%20sys)
-  - [Calculators](https://github.com/swissnx/Projects/tree/main/Utilities/Calculators)
-  - [Converters](https://github.com/swissnx/Projects/tree/main/Utilities/Converters)
-  - [Generators](https://github.com/swissnx/Projects/tree/main/Utilities/Generators)
-  - [Image Tools](https://github.com/swissnx/Projects/tree/main/Utilities/Image%20Tools)
-  - [Link Launchers](https://github.com/swissnx/Projects/tree/main/Utilities/Link%20Launchers)
-  
+  - [Banking sys]()
+  - [Calculators]()
+    - [Unit Calculations]()
+  - [Converters]()
+    - [Emoticon Conv]()
+  - [Casuals]()
+  - [Downloaders]()
+  - [Email Manager]()
+    - [Email Sender]()
+    - [Email Slicer]()
+  - [Generators]()
+  - [Image Tools]()
+  - [Link Manager]()
+    - [Launchers]()
+  - [Word Counters]()
+
+- [Clocks]()
+
+- [Calendars]()
+
 - [Games](https://github.com/swissnx/Projects/tree/main/Games)
 <br><br>
 
