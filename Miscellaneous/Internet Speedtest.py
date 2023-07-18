@@ -28,7 +28,7 @@ class InternetSpeed:
     def __run(self):
         try:
             download, upload = self.__measure_speed()
-            print("\nMeasuring Internet Speed\n")
+            print("\nMeasuring Internet Speed:\n")
             print(f"Download - {download:.2f} Mbps")
             print(f"Upload - {upload:.2f} Mbps")
             
