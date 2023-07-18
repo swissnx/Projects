@@ -12,7 +12,7 @@ class HammingWeight:
             result = self.__hamming_weight()
             print(f"The Hamming weight: {result}")
         except Exception as e:
-            print(f"\n\u001b[3m** An error occurred: \u001b[38;5;200m{e}\u001b[0m")
+            print(f"\n\u001b[3m** Error: \u001b[38;5;200m{e}\u001b[0m")
 
     def run(self):
         return self.__run()
