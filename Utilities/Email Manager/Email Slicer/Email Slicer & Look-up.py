@@ -32,7 +32,6 @@ class EmailSlicer:
         return re.fullmatch(regex, email)
 
     def __lookup_email(self, email):
-        # Replace with your own API key and endpoint   #try norbert/hunter email look-up api
         api_key = "YOUR_API_KEY"
         endpoint = f"https://api.emailfinder.io/v1/email?email={email}&api_key={api_key}"
         response = requests.get(endpoint)
