@@ -6,7 +6,7 @@ from datetime import datetime as dt
 class SteamIDFinder:
     def __init__(self):
         self.__steamid64ident = 76561197960265728
-        self.__apikey = "7D4973D95EDFE720AA923806EB8C1612"
+        self.__apikey = "YOUR_API_KEY_HERE"
         self.__steam_id = None
         self.__name = None
         self.__profile_url = None
