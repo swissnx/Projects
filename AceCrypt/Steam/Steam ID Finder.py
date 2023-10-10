@@ -1,4 +1,5 @@
 
+import re
 import requests
 from datetime import datetime as dt
 
@@ -67,15 +68,54 @@ class SteamIDFinder:
     def __fetch_name(self):
         response = requests.get(f"{self.__USER_URL}/?key={self.__apikey}&steamids={self.__steam_id}")
         data = response.json()
-        self.__name = data["response"]["players"][0]["personaname"]
+        if "response" in data and "players" in data["response"] and data["response"]["players"]:
+            self.__name = data["response"]["players"][0]["personaname"]
+        else:
+            self.__name = "Profile not found or private"
 
     def __generate_profile_url(self):
         response = requests.get(f"{self.__USER_URL}/?key={self.__apikey}&steamids={self.__steam_id}")
         data = response.json()
-        self.__profile_url = data["response"]["players"][0]["profileurl"]
+        if "response" in data and "players" in data["response"] and data["response"]["players"]:
+            self.__profile_url = data["response"]["players"][0]["profileurl"]
+        else:
+            self.__profile_url = "Profile not found or private"
+
+    # def __extr_id64_prof_url(self, profile_url):
+    #     # Define a regular expression pattern to match Steam profile URLs
+    #     pattern = r'(https?://steamcommunity\.com/id/|https?://steamcommunity\.com/profiles/)([a-zA-Z0-9_-]+)'
+    #     match = re.search(pattern, profile_url)     # Use re.search to find the match in the URL
+    #     if match:
+    #         custom_url = match.group(2)
+    #         if custom_url.isdigit():
+    #             steam64_id = custom_url
+    #         else:
+    #             # If it's not numeric, we need to fetch the Steam64 ID from the Steam API
+    #             steam64_id = self.__fetch_id64_from_api(custom_url)
+    #         return steam64_id
+    #     else:
+    #         return None
+    
+    # def __fetch_id64_from_api(self, custom_url):
+    #     # You would need to implement a function to fetch the Steam64 ID from the Steam API. This typically involves
+    #     # making a request to the Steam API with the custom URL and parsing the response to extract the Steam64 ID.
+    #     steam_api_url = f"https://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key={self.__apikey}&vanityurl={custom_url}"
+    #     response = requests.get(steam_api_url)
+    #     data = response.json()
+    
+    #     # Check for success and extract the Steam64 ID
+    #     if "response" in data and "steamid" in data["response"]:
+    #         return data["response"]["steamid"]
+    #     else:
+    #         return None
 
     def __generate_profile_permalink(self):
-        self.__profile_permalink = f"https://steamcommunity.com/profiles/{self.__steam_id}"
+        response = requests.get(f"{self.__USER_URL}/?key={self.__apikey}&steamids={self.__steam_id}")
+        data = response.json()
+        if "response" in data and "players" in data["response"] and data["response"]["players"]:
+            self.__profile_permalink = f"https://steamcommunity.com/profiles/{self.__steam_id}"
+        else:
+            self.__profile_permalink = "Profile not found or private"
 
     def __get_profile_state(self, pState):
         profile_states = {0: "Offline",
@@ -105,30 +145,38 @@ class SteamIDFinder:
         return avatars
 
     def __get_games(self, includeFree=False):
-        includeFree = includeFree and "1" or "0"
-        steam_id = str(self.__steam_id)
-        request = requests.get(
-            self.__GAME_URL + "?key=" + self.__apikey + "&steamid=" + steam_id + "&include_played_free_games=" + includeFree + "&include_appinfo=1"
-        )
-        response = request.json()
-        data = response["response"]
-
-        if not data:
-            return None, None
-        games = []
-        for game in data["games"]:
-            game_object = {"id": game["appid"],
-                           "name": game["name"],
-                           "playtime": game["playtime_forever"] // 60 #converting to hrs
-                           }
-            games.append(game_object)
-        return data["game_count"], games
+      includeFree = includeFree and "1" or "0"
+      steam_id = str(self.__steam_id)
+      request = requests.get(
+          self.__GAME_URL + "?key=" + self.__apikey + "&steamid=" + steam_id + "&include_played_free_games=" + includeFree + "&include_appinfo=1"
+      )
+      try:
+          response = request.json()
+          data = response["response"]
+      except (requests.exceptions.JSONDecodeError, KeyError):
+          return None, None
+  
+      if "games" in data:
+          games = []
+          for game in data["games"]:
+              game_object = {"id": game["appid"],
+                             "name": game["name"],
+                             "playtime": game["playtime_forever"] // 60  # converting to hrs
+                             }
+              games.append(game_object)
+          return data["game_count"], games
+      else:
+          return None, None
 
     def __get_bans(self):
         request = requests.get(self.__BAN_URL + "?key=" + self.__apikey + "&steamids=" + str(self.__steam_id))
         response = request.json()
-        data = response["players"][0]
-        return data["VACBanned"], data["NumberOfVACBans"]
+        
+        if "players" in response and response["players"]:
+            data = response["players"][0]
+            return data["VACBanned"], data["NumberOfVACBans"]
+        else:
+            return "Profile not found or private", 0
 
     def __get_account_creation_date(self):
         response = requests.get(f"{self.__USER_URL}/?key={self.__apikey}&steamids={self.__steam_id}")
@@ -137,9 +185,35 @@ class SteamIDFinder:
         creation_date = dt.fromtimestamp(time_created)
         return creation_date
 
+    #this block replaces the same under run method to make it more usable in the future but needs contemplation otherwise isn't working properly if separated into another new method, working only in run method for now:
+    # def __extr_steam64_permalink(self, steam_id):
+    #     if steam_id.startswith("https://steamcommunity.com/profiles/"):
+    #         parts = steam_id.split("/")
+    #         if len(parts) >= 5:
+    #             steam_id = parts[4]
+    #         else:
+    #             print("Invalid profile URL format.")
+
+    # Extract Steam64 ID from a Profile URL
+    # def __extr_steam64_prof_url(self, profile_url):
+    #     steam64_id = self.__extr_id64_prof_url(profile_url)
+    #     self.__extr_id64 = int(steam64_id) + self.__steamid64ident
+    #     if self.__extr_id64.isdigit():
+    #         self.__steam64_id = int(self.__extr_id64) + self.__steamid64ident
+
     def __run(self):
         while True:
-            steam_id = input("\nEnter Steam ID: ")
+            steam_id = input("\nSubmit: ")
+
+            # Extract Steam64 ID from a Permalink
+            if steam_id.startswith("https://steamcommunity.com/profiles/"):
+                parts = steam_id.split("/")
+                if len(parts) >= 5:
+                    steam_id = parts[4]
+                else:
+                    print("Invalid profile URL format.")
+                    continue
+
             if steam_id.startswith("STEAM_0"):
                 self.__steam_id = self.__steamid_to_steam64(steam_id)
             elif steam_id.startswith("U:1"):
@@ -148,16 +222,19 @@ class SteamIDFinder:
                 self.__steam_id = int(steam_id) + self.__steamid64ident
             else:
                 self.__steam_id = steam_id
+
             self.__fetch_name()
             self.__generate_profile_url()
             self.__generate_profile_permalink()
+            # xyz = self.__extr_id64_prof_url(steam_id)
+            # self.__extr_steam64_permalink(steam_id)
             game_count, games = self.__get_games(includeFree=True)
             vac_banned, vac_ban_count = self.__get_bans()
     
             print(f"\nSteam ID: {self.__steam64_to_steamid(self.__steam_id)}")
             print(f"Steam ID3: {self.__steam64_to_usteamid(self.__steam_id)}")
             print(f"Steam32 ID: {int(self.__steam_id) - self.__steamid64ident}")
-            print(f"Steam64 ID: {self.__steam_id}")
+            print(f"Steam64 ID: {self.__steam_id}\n")
             print(f"\nName: {self.__name}")
             print(f"Profile URL: {self.__profile_url}")
             print(f"Permalink: {self.__profile_permalink}")
