@@ -81,34 +81,6 @@ class SteamIDFinder:
         else:
             self.__profile_url = "Profile not found or private"
 
-    # def __extr_id64_prof_url(self, profile_url):
-    #     # Define a regular expression pattern to match Steam profile URLs
-    #     pattern = r'(https?://steamcommunity\.com/id/|https?://steamcommunity\.com/profiles/)([a-zA-Z0-9_-]+)'
-    #     match = re.search(pattern, profile_url)     # Use re.search to find the match in the URL
-    #     if match:
-    #         custom_url = match.group(2)
-    #         if custom_url.isdigit():
-    #             steam64_id = custom_url
-    #         else:
-    #             # If it's not numeric, we need to fetch the Steam64 ID from the Steam API
-    #             steam64_id = self.__fetch_id64_from_api(custom_url)
-    #         return steam64_id
-    #     else:
-    #         return None
-    
-    # def __fetch_id64_from_api(self, custom_url):
-    #     # You would need to implement a function to fetch the Steam64 ID from the Steam API. This typically involves
-    #     # making a request to the Steam API with the custom URL and parsing the response to extract the Steam64 ID.
-    #     steam_api_url = f"https://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key={self.__apikey}&vanityurl={custom_url}"
-    #     response = requests.get(steam_api_url)
-    #     data = response.json()
-    
-    #     # Check for success and extract the Steam64 ID
-    #     if "response" in data and "steamid" in data["response"]:
-    #         return data["response"]["steamid"]
-    #     else:
-    #         return None
-
     def __generate_profile_permalink(self):
         response = requests.get(f"{self.__USER_URL}/?key={self.__apikey}&steamids={self.__steam_id}")
         data = response.json()
@@ -185,22 +157,6 @@ class SteamIDFinder:
         creation_date = dt.fromtimestamp(time_created)
         return creation_date
 
-    #this block replaces the same under run method to make it more usable in the future but needs contemplation otherwise isn't working properly if separated into another new method, working only in run method for now:
-    # def __extr_steam64_permalink(self, steam_id):
-    #     if steam_id.startswith("https://steamcommunity.com/profiles/"):
-    #         parts = steam_id.split("/")
-    #         if len(parts) >= 5:
-    #             steam_id = parts[4]
-    #         else:
-    #             print("Invalid profile URL format.")
-
-    # Extract Steam64 ID from a Profile URL
-    # def __extr_steam64_prof_url(self, profile_url):
-    #     steam64_id = self.__extr_id64_prof_url(profile_url)
-    #     self.__extr_id64 = int(steam64_id) + self.__steamid64ident
-    #     if self.__extr_id64.isdigit():
-    #         self.__steam64_id = int(self.__extr_id64) + self.__steamid64ident
-
     def __run(self):
         while True:
             steam_id = input("\nSubmit: ")
@@ -226,8 +182,6 @@ class SteamIDFinder:
             self.__fetch_name()
             self.__generate_profile_url()
             self.__generate_profile_permalink()
-            # xyz = self.__extr_id64_prof_url(steam_id)
-            # self.__extr_steam64_permalink(steam_id)
             game_count, games = self.__get_games(includeFree=True)
             vac_banned, vac_ban_count = self.__get_bans()
     
